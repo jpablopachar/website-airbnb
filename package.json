@@ -1,0 +1,48 @@
+{
+  "name": "website-airbnb",
+  "version": "1.0.0",
+  "description": "Clon WebSite de Airbnb utilizando WebPack, Babel, Handlebars, Css Grid, ES10",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack --config webpack.config.js -p",
+    "dev": "webpack-dev-server --config webpack.config.js -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpablopachar/website-airbnb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpablopachar/website-airbnb/issues"
+  },
+  "homepage": "https://github.com/jpablopachar/website-airbnb#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.0.0",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^4.2.1",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --fuente-principal:  'Lato', sans-serif;
+  --primario: #da595e;
+  --obscuro: #484848;
+  --claro: #ffffff;
+}
+
+html { box-sizing: border-box; }
+
+body { font-family: var(--fuente-principal); }
+
+h1 {
+  font-weight: 400;
+  font-size: 2.6rem;
+}
+
+h2 { font-size: 2rem; }
+
+h3 { font-size: 1.8rem; }
