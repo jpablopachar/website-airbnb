@@ -6,6 +6,7 @@
   "scripts": {
     "build": "rimraf dist && webpack --config webpack.config.js -p",
     "dev": "webpack-dev-server --config webpack.config.js -d",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
     "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
     "handlebars": "^4.7.6",
     "handlebars-loader": "^1.7.1",
     "html-webpack-plugin": "^4.2.1",
