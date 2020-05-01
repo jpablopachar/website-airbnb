@@ -14,7 +14,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/bundle.js',
   },
-  devtool: 'source-map',
   devServer: {
     port: 3000,
   },
@@ -54,7 +53,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'static/',
+              outputPath: 'static/images',
               useRelativePath: true,
             },
           },
@@ -69,7 +68,7 @@ module.exports = {
                 enabled: false,
               },
               pngquant: {
-                quality: '65-90',
+                quality: [0.65, 0.90],
                 speed: 4,
               },
               gifsicle: {
@@ -94,10 +93,6 @@ module.exports = {
         caseSensitive: true,
         removeComments: true,
         removeEmptyElements: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true,
       },
     }),
     new MiniCssExtractPlugin({
